@@ -1,11 +1,8 @@
 {
   "cSpell.words": [
-    "iconsets",
-    "materialdesignicons",
+    "execa",
     "njsproj",
     "ntvs",
-    "Pinia",
-    "Vitest",
-    "vuetify"
+    "sindresorhus"
   ]
 }

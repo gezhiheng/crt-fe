@@ -1,9 +1,14 @@
 {
-	"name": "create-frontend",
+	"name": "crt-fe",
+	"version": "0.0.3",
+	"description": "Initialize the front-end project template",
 	"bin": {
-		"create-frontend": "./index.js"
+		"crt-fe": "./index.js"
 	},
 	"type": "module",
+	"keywords": ["cli", "frontend", "starter"],
+  "author": "henryge",
+  "license": "MIT",
 	"dependencies": {
 		"chalk": "^5.4.1",
 		"commander": "^13.1.0",

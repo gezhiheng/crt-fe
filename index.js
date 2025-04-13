@@ -8,7 +8,7 @@ const program = new Command()
 program
   .name('create-frontend')
   .description('Initialize a new frontend project from the starter template')
-  .argument('<project-name>', 'Name of the new project')
+  .argument('[project-name]', 'Name of the new project')
   .action((projectName) => {
     createProject(projectName)
   })

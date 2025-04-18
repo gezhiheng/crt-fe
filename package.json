@@ -1,9 +1,13 @@
 {
 	"name": "crt-fe",
-	"version": "0.0.4",
+	"version": "1.0.0",
 	"description": "Initialize the front-end project template",
 	"bin": {
 		"crt-fe": "./index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gezhiheng/crt-fe"
 	},
 	"type": "module",
 	"keywords": ["cli", "frontend", "starter"],

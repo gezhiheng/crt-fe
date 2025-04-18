@@ -1,6 +1,6 @@
 {
 	"name": "crt-fe",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Initialize the front-end project template",
 	"bin": {
 		"crt-fe": "./index.js"

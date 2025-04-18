@@ -45,6 +45,14 @@ export async function createProject(projectName) {
   pkg.name = projectName
   await fs.writeJson(pkgPath, pkg, { spaces: 2 })
 
+  // 修改 index.html 的 <title>
+  const indexHtmlPath = path.join(targetDir, 'index.html')
+  if (await fs.pathExists(indexHtmlPath)) {
+    let html = await fs.readFile(indexHtmlPath, 'utf-8')
+    html = html.replace(/<title>(.*?)<\/title>/, `<title>${projectName}</title>`)
+    await fs.writeFile(indexHtmlPath, html, 'utf-8')
+  }
+
   // 安装依赖
   console.log(chalk.cyan('📦 正在安装依赖...'))
   await execa('pnpm', ['install'], { cwd: targetDir, stdio: 'inherit' })

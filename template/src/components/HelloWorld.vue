@@ -38,6 +38,7 @@ const techColors = {
             <h1>
               Frontend Starter
               <v-btn
+                v-debounce="() => console.log('clicked')"
                 class="m-0"
                 color="blue-lighten-2"
                 icon="mdi-thumb-up"

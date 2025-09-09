@@ -8,6 +8,7 @@ import App from './App.vue'
 // Vuetify
 import vuetify from './plugins/vuetify'
 import 'normalize.css'
+import 'reset.css'
 
 // unocss
 import 'uno.css'
